@@ -1,0 +1,98 @@
+/* About Page Styles */
+
+/* --- STORY SECTION --- */
+.story-section {
+    padding: 100px 60px;
+    background-color: transparent !important;
+    /* Override default background if needed, matches original inline style */
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-image {
+    flex: 0 0 35%;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 8px solid var(--dark-brown);
+}
+
+.story-image img {
+    width: 100%;
+    display: block;
+}
+
+.story-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    border: 5px solid var(--dark-brown);
+    width: 90px;
+    height: 90px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-brown);
+    text-align: center;
+}
+
+.story-badge-year {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.story-badge-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* --- STORY TEXT --- */
+.story-text {
+    flex: 1;
+    text-align: left;
+}
+
+.story-text h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--dark-brown);
+}
+
+.story-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .story-section {
+        padding: 60px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+    }
+
+    .story-image {
+        flex: 1;
+        width: 100%;
+    }
+}

@@ -1,0 +1,180 @@
+/* --- PAGE LAYOUT & HEADER --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EF7D32;
+    /* Orange */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 52px;
+    color: #431407;
+    /* Dark Brown */
+    margin: 0;
+    line-height: 1.1;
+}
+
+.page-title span {
+    color: #EF7D32;
+}
+
+/* --- MENU FILTERS --- */
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid #EF7D32;
+    background: transparent;
+    color: #EF7D32;
+    border-radius: 50px;
+    /* Fully rounded pill shape */
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #EF7D32;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(239, 125, 50, 0.3);
+}
+
+/* --- MENU GRID SYSTEM --- */
+.grid {
+    display: grid;
+    /* Responsive columns: At least 300px wide, fits as many as possible */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+/* --- CARD STYLING --- */
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #FFF8F0;
+    /* Very light cream border */
+    box-shadow: 0 10px 30px rgba(67, 20, 7, 0.03);
+    /* Soft shadow */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Ensures all cards in a row are same height */
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(67, 20, 7, 0.08);
+    border-color: #EF7D32;
+    /* Orange border on hover */
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 260px;
+    /* Fixed height for uniformity */
+    object-fit: cover;
+    background-color: #FFF8F0;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    /* Subtle zoom effect */
+}
+
+/* Text Content */
+.card h3 {
+    font-size: 22px;
+    margin: 20px 25px 10px;
+    color: #431407;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 25px 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+    /* Pushes the price to the bottom */
+}
+
+/* Price Tag */
+.price {
+    margin-top: auto;
+    /* Forces to bottom */
+    padding: 20px 25px;
+    background-color: #FFFDF9;
+    border-top: 1px solid #FFF0E0;
+    color: #EF7D32 !important;
+    /* Force Orange */
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price i {
+    font-size: 20px;
+}
+
+/* --- ANIMATION --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 42px;
+    }
+
+    .grid {
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+}

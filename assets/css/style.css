@@ -1,0 +1,546 @@
+/* =========================================
+   1. VARIABLES & SETUP
+   ========================================= */
+:root {
+    /* --- FONTS --- */
+    --font-heading: "Fredoka", sans-serif;
+    --font-body: "Barlow", sans-serif;
+
+    /* --- BRAND COLORS --- */
+    --primary-orange: #EF7D32;
+    --dark-brown: #431407;
+    --cream: #FFEDD4;
+    --white: #FFFFFF;
+    --warm-white: #FFFDF9;
+    --gold: #FAD8AA;
+    --light-beige: #FFF5EA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    background-color: #FFFDF9 !important;
+    min-height: 100vh;
+    /* Warm White */
+    color: var(--dark-brown);
+    line-height: 1.6;
+}
+
+/* Cards remain pure white for contrast */
+.card,
+.login-card,
+.dashboard-card {
+    background-color: #FFFFFF;
+}
+
+/* =========================================
+   2. TYPOGRAPHY
+   ========================================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    /* SemiBold for Fredoka looks best */
+}
+
+/* Nav & Buttons need to be punchy, use Barlow Bold */
+nav a,
+.btn,
+.tagline,
+.section-label {
+    font-family: var(--font-body);
+    font-weight: 700;
+}
+
+/* =========================================
+   3. COMPONENTS (Header, Buttons, Nav)
+   ========================================= */
+header {
+    background: #ffffff;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(67, 20, 7, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    /* Bold Fredoka */
+    color: var(--primary-orange);
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-brown);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-orange);
+}
+
+/* --- BUTTONS --- */
+.btn {
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    color: white;
+    box-shadow: 0 4px 12px rgba(239, 125, 50, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--dark-brown);
+    border: 2px solid var(--dark-brown);
+}
+
+.btn-outline:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
+.btn-dark {
+    background-color: var(--dark-brown);
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: var(--primary-orange);
+    border: 2px solid white;
+}
+
+.btn-small {
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+/* =========================================
+   4. SECTIONS
+   ========================================= */
+
+/* --- HERO --- */
+/* Moved to index.css */
+
+/* --- SECTION HEADERS --- */
+.section-label {
+    font-size: 14px;
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.section-header h2 {
+    font-size: 56px;
+    color: var(--dark-brown);
+    letter-spacing: -1px;
+    margin-top: 5px;
+}
+
+.highlight-orange {
+    color: var(--primary-orange);
+}
+
+.highlight-white {
+    color: white;
+}
+
+/* Double Stroke and Pop-Out Text moved to index.css */
+
+/* --- TREATS (CARDS) --- */
+/* Moved to index.css */
+
+/* --- DRINKS & BROWNIES --- */
+/* Moved to index.css */
+
+/* --- STORY --- */
+/* Moved to about.css and index.css */
+
+/* --- FAMILY --- */
+/* Moved to index.css */
+
+/* --- FOOTER --- */
+/* Moved to index.css */
+
+/* --- FOOTER --- */
+footer {
+    background: linear-gradient(to right, var(--dark-brown), #5a2e22);
+    color: white;
+    padding: 80px 60px 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* 3 columns to center properly */
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-section h3 {
+    color: var(--gold);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: var(--gold);
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: var(--primary-orange);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* =========================================
+   5. UTILITIES & PAGE LAYOUTS
+   ========================================= */
+
+/* --- CONTAINER --- */
+.container {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- PAGE TITLE --- */
+.page-title {
+    text-align: center;
+    color: var(--primary-orange);
+    margin-bottom: 15px;
+    font-size: 52px;
+    letter-spacing: -1px;
+}
+
+.page-title span {
+    color: var(--dark-brown);
+    font-size: 52px;
+    /* Ensure consistency */
+}
+
+/* --- GRID LAYOUT --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- CARD --- */
+/* Moved to menu.css */
+
+/* --- STORY TEXT (for About page) --- */
+/* Moved to about.css and index.css */
+
+/* --- FORM STYLES --- */
+/* Moved to franchise.css */
+
+/* =========================================
+   6. BLOG STYLES & FIXES
+   ========================================= */
+/* Moved to single-blog.css */
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+
+    header,
+    .story-section {
+        padding: 60px 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+    }
+
+    .story-image {
+        flex: 1;
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* Add a mobile menu toggle later if needed */
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- NAV CARDS SECTION (Locations & Blogs) --- */
+/* Moved to index.css */
+
+/* --- MENU FILTERS --- */
+/* Moved to menu.css */
+
+
+/* =========================================
+   7. FAILSAFE DUPLICATES (USER REQUESTED)
+   ========================================= */
+
+/* --- FRANCHISE HERO (Fixed Layout) --- */
+.franchise-hero {
+    background: linear-gradient(135deg, var(--cream) 0%, #FFF8F0 100%) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    min-height: 80vh;
+    padding: 120px 5% 80px;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure children respect flex */
+.franchise-hero .hero-text {
+    flex: 1 !important;
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.franchise-hero .hero-image {
+    flex: 1 !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.franchise-hero .hero-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 0px rgba(239, 125, 50, 0.15);
+    object-fit: cover;
+}
+
+/* --- OUR STORY SECTION (FIXED) --- */
+.story-section {
+    padding: 100px 5%;
+    background-color: transparent;
+    position: relative;
+}
+
+.story-content {
+    display: flex !important;
+    flex-direction: row !important;
+    /* Force row layout */
+    flex-wrap: nowrap !important;
+    /* Prevent wrapping */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 80px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Side */
+.story-image {
+    flex: 1 !important;
+    min-width: 0 !important;
+    /* Prevent flex overflow */
+    max-width: 450px;
+    position: relative;
+    border-radius: 30px;
+    border: 8px solid #431407;
+    /* Dark Brown */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* The "Since 2018" Badge */
+.story-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFC107;
+    /* Gold */
+    border: 5px solid #431407;
+    width: 90px;
+    height: 90px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #431407;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.story-badge-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -2px;
+}
+
+.story-badge-year {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Text Side */
+.story-text {
+    flex: 1.2 !important;
+    min-width: 0 !important;
+    /* Prevent flex overflow */
+}
+
+.story-text h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #431407;
+}
+
+.story-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Redefine media queries for these specific sections to ensure they still stack on mobile */
+@media (max-width: 968px) {
+    .franchise-hero {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 120px 20px 60px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}

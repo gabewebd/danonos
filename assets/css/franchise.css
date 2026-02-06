@@ -1,0 +1,302 @@
+/* Franchise Page Styles */
+
+/* --- WHY FRANCHISE SECTION --- */
+.why-franchise-section {
+    background: white;
+    padding: 100px 20px;
+}
+
+.why-franchise-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.why-franchise-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.why-franchise-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(67, 20, 7, 0.08);
+}
+
+.why-franchise-title {
+    margin: 12px 0 20px;
+    font-size: 42px;
+    white-space: nowrap;
+}
+
+.why-franchise-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.benefit-icon-box {
+    background: #FFF8F0;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefit-icon {
+    color: var(--primary-orange);
+    font-size: 26px;
+}
+
+.benefit-title {
+    margin: 0 0 6px;
+    font-size: 17px;
+    color: var(--dark-brown);
+}
+
+.benefit-desc {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* --- FRANCHISE FORM SECTION --- */
+.franchise-form-section {
+    background: #FFFDF9;
+    padding: 100px 20px;
+}
+
+.franchise-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-header-label {
+    display: inline-block;
+}
+
+.form-header-title {
+    margin: 12px 0 15px;
+    font-size: 42px;
+}
+
+.form-header-desc {
+    color: #666;
+    font-size: 16px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Alerts */
+.alert {
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.alert-success {
+    background: #d4edda;
+    border: 2px solid #28a745;
+    color: #155724;
+}
+
+.alert-error {
+    background: #f8d7da;
+    border: 2px solid #dc3545;
+    color: #721c24;
+}
+
+.alert-icon {
+    font-size: 24px;
+}
+
+/* Form Card */
+.form-card-box {
+    background: white;
+    padding: 50px 55px;
+    border-radius: 12px;
+    border: 1px solid #E8D5C4;
+}
+
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.form-field-group {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #431407;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.form-required {
+    color: #EF7D32;
+}
+
+.form-optional {
+    color: #888;
+    font-weight: 400;
+}
+
+.form-input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #DBC4B0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+    font-family: 'Barlow', sans-serif;
+    background: #FEFDFB;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1.5px solid #DBC4B0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+    font-family: 'Barlow', sans-serif;
+    resize: vertical;
+    background: #FEFDFB;
+    line-height: 1.6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #EF7D32;
+    background: white;
+    outline: none;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #EF7D32;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.form-submit-btn:hover {
+    background: #D66A22;
+}
+
+.privacy-notice {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.privacy-icon {
+    margin-right: 5px;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 968px) {
+
+    /* Hero Section Mobile */
+    .franchise-hero {
+        flex-direction: column-reverse;
+        /* Stack image on top */
+        text-align: center;
+        padding: 120px 20px 60px;
+        height: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+        /* Smaller text on mobile */
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-bottom: 40px;
+        box-shadow: 10px 10px 0px rgba(239, 125, 50, 0.15);
+    }
+
+    /* Why Section Mobile */
+    .why-franchise-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .form-card-box {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .why-franchise-section,
+    .franchise-form-section {
+        padding: 60px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-orange,
+    .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}

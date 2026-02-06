@@ -1,0 +1,74 @@
+/* Locations Page Styles */
+.locations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 60px 0;
+}
+
+/* 3-Column Grid on Desktop */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+@media (max-width: 1024px) {
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Location Card */
+.location-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(67, 20, 7, 0.08);
+    border: 1px solid var(--cream, #FFEDD4);
+    transition: all 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(67, 20, 7, 0.12);
+}
+
+.location-card .icon {
+    font-size: 40px;
+    color: #EF7D32;
+    margin-bottom: 15px;
+}
+
+.location-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    color: #431407;
+    margin-bottom: 15px;
+}
+
+.location-card p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.location-card p i {
+    color: #EF7D32;
+    margin-right: 5px;
+}
+
+.location-card .btn {
+    margin-top: 10px;
+}

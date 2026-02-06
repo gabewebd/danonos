@@ -1,0 +1,485 @@
+/* Index Page Styles */
+
+/* --- HERO SECTION --- */
+.hero {
+    display: flex;
+    flex-direction: row;
+    /* Force row layout */
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    padding: 0;
+    align-items: stretch;
+    min-height: 85vh;
+    background: #FFEDD4;
+    /* Cream Root */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(239, 125, 50, 0.05);
+    border-radius: 50% 0 0 0;
+    z-index: 0;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+    /* Prevent flex overflow */
+    z-index: 1;
+    padding: 0 40px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: 68px;
+    line-height: 1.15;
+    margin: 0 0 25px 0;
+    color: #431407;
+    /* Dark Brown */
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-text h1 span {
+    color: #EF7D32;
+    /* Primary Orange */
+    font-weight: 900;
+}
+
+.hero-text>p {
+    font-size: 18px;
+    color: #666;
+    margin: 0 0 30px 0;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tagline {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.tagline-available {
+    color: #00B14F;
+    /* GrabFood Green */
+    font-weight: 700;
+}
+
+.hero-image {
+    flex: 0 0 50%;
+    min-width: 0;
+    /* Prevent flex overflow */
+    z-index: 1;
+    position: relative;
+    padding: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+/* --- TREATS SECTION (CARDS) --- */
+.treats-section {
+    padding: 80px 20px;
+    background-color: #FFFDF9;
+    /* Warm White */
+    text-align: center;
+    position: relative;
+}
+
+.section-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #EF7D32;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: #431407;
+    margin-bottom: 40px;
+}
+
+.view-all {
+    position: absolute;
+    top: 80px;
+    /* Aligns with header */
+    right: 5%;
+    color: #EF7D32;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.treats-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.treat-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(67, 20, 7, 0.05);
+    border: 2px solid #FFF8F0;
+    transition: all 0.3s ease;
+}
+
+.treat-card:hover {
+    transform: translateY(-8px);
+    border-color: #EF7D32;
+    box-shadow: 0 15px 30px rgba(67, 20, 7, 0.1);
+}
+
+.treat-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.treat-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #431407;
+}
+
+.treat-card p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 12px;
+    border: 1px solid #EF7D32;
+    color: #EF7D32;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-small:hover {
+    background: #EF7D32;
+    color: white;
+}
+
+/* --- DRINKS & BROWNIES SECTION --- */
+.drinks-brownies {
+    padding: 100px 5%;
+    background-color: #FFF8F0;
+    /* Cream */
+}
+
+.drinks-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drinks-image,
+.brownies-image {
+    flex: 0 0 25%;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 8px solid #431407;
+    box-shadow: 0 10px 25px rgba(67, 20, 7, 0.15);
+}
+
+.drinks-image img,
+.brownies-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.drinks-text {
+    flex: 1;
+    text-align: center;
+}
+
+.drinks-text h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #431407;
+}
+
+.btn-dark {
+    background: #431407;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* --- NAV CARDS SECTION (Locations & Blogs) --- */
+.nav-cards-section {
+    padding: 80px 5%;
+    background-color: #FFFDF9;
+    /* Warm White */
+}
+
+.nav-cards-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-card {
+    flex: 1;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+.nav-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.nav-card:hover img {
+    transform: scale(1.05);
+}
+
+.nav-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: background 0.3s ease;
+}
+
+.nav-card:hover .nav-card-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-card h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- JOIN OUR FAMILY SECTION --- */
+.family-section {
+    background: linear-gradient(135deg, #EF7D32 0%, #D8651E 100%);
+    color: white;
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.family-content {
+    flex: 1;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.family-content h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 1;
+}
+
+.family-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.family-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-white {
+    background: white;
+    color: #EF7D32;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-white:hover {
+    background: #FFF8F0;
+}
+
+.family-image {
+    flex: 0 0 40%;
+    z-index: 1;
+}
+
+.family-image img {
+    width: 100%;
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* --- TYPOGRAPHY EFFECTS --- */
+.double-stroke {
+    /* Simulating stroke if font supports it, or just bold white */
+    color: white;
+    font-weight: 900;
+}
+
+.pop-out-text {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0;
+    color: #EF7D32;
+    /* -webkit-text-stroke: 2px #431407; */
+    /* Dark Brown Outline */
+}
+
+.pop-out-text-sm {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0;
+    color: #EF7D32;
+    /* -webkit-text-stroke: 1.5px #431407; */
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+
+    .hero,
+    .treats-section,
+    .drinks-brownies,
+    .story-section,
+    .family-section {
+        padding: 60px 30px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .story-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+        /* Space for navbar */
+    }
+
+    .hero-text {
+        padding: 0 20px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    /* Drinks & Brownies */
+    .drinks-content {
+        flex-direction: column;
+    }
+
+    .drinks-image,
+    .brownies-image {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    /* Story */
+    .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Nav Cards */
+    .nav-cards-container {
+        flex-direction: column;
+    }
+
+    .nav-card {
+        height: 250px;
+    }
+
+    /* Family */
+    .family-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .family-buttons {
+        justify-content: center;
+    }
+}

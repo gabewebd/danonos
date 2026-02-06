@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://danonos.com/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://danonos.com/menu.php</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.90</priority>
+  </url>
+  
+  <url>
+    <loc>https://danonos.com/about.php</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://danonos.com/franchise.php</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://danonos.com/locations.php</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://danonos.com/blogs.php</loc>
+    <lastmod>2026-02-04</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://danonos.com/single-blog.php?id=1</loc>
+    <priority>0.70</priority>
+  </url>
+  
+  <url>
+    <loc>https://danonos.com/single-blog.php?id=2</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
