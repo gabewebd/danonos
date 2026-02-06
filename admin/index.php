@@ -59,7 +59,7 @@ if (isset($_POST['login'])) {
 
         body {
             /* 60% Black Overlay on top of login-bg.jpg */
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/danonos-login-bg.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/img/danonos-login-bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -215,7 +215,7 @@ if (isset($_POST['login'])) {
 <body>
 
     <div class="login-card">
-        <img src="assets/img/danonos-logo.jpg" alt="Danonos"
+        <img src="../assets/img/danonos-logo.jpg" alt="Danonos"
             style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin-bottom: 15px;">
         <p class="subtitle">Admin Panel Login</p>
 
